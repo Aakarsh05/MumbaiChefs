@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding:0;
+}
+body
+{
+background-image:url("gallery/mumbai1.jpg");
+background-size: cover;
+background-attachment: fixed;
+}
+#feature
+{
+    width:100%;
+    padding: 70px 0;
+}
+.title-text
+{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.title-text p
+{
+    margin:auto;
+    font-size:50px;
+    color:black;
+    font-weight:bold;
+    position: relative;
+    z-index: 1;
+    display:inline-block;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.title-text p::after
+{
+    content:'';
+    width:50px ;
+    height: 35px;
+    background: linear-gradient(#009658,#fff);
+    position: absolute;
+    top:-20px;
+    left:0;
+    z-index:-1;
+    transform: rotate(10deg);
+    border-top-left-radius:35px;
+    border-bottom-right-radius: 35px;
+}
+.title-text h1
+{
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.service-box1
+{
+    width: 80%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin:auto;
+    background: transparent;
+}
+.single-service1
+{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+.single-service1 img
+{
+    width:100%;
+    border-radius:7px;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow:0px 10px 20px 3px #00968814;
+}
+.overlay
+{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    border-radius: 7px;
+    cursor:pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),aqua);
+    opacity: 0;
+    transition: 1s;
+}
+.single-service1:hover .overlay
+{
+    opacity:1 ;
+}
+.service-desc
+{
+    width: 80%;
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform:translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+}
+hr
+{
+    background:#fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width:60%;
+}
+.single-service1:hover .service-desc
+{
+    bottom:40%;
+    opacity: 1;
+}
+@media screen and (max-width:770px)
+{
+    .single-service1
+    {
+        flex-basis: 100%;
+        margin-bottom:30px;
+    }
+
+}
+
+#btn a
+{
+    text-decoration: none;
+    text-align: center;
+}
+h3
+{
+    color: #FFEDDB;
+}
+.bali
+{
+    border: 1px solid black;
+    position: relative;
+    margin-right: 350px;
+    margin-left: 350px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 5px;
+
+}
+.bali:hover
+{
+    background: linear-gradient(#9C0F48,#ECB390);
+}
+.gupta
+{
+    border: 1px solid black;
+    position: relative;
+    margin-right: 350px;
+    margin-left: 350px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 5px;
+}
+.gupta:hover
+{
+    background: linear-gradient(#9C0F48,#ECB390);
+}
+.anil
+{
+    border: 1px solid black;
+    position: relative;
+    margin-right: 350px;
+    margin-left: 350px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 5px;
+}
+.anil:hover
+{
+    background: linear-gradient(#9C0F48,#ECB390);
+}
+.vikas
+{
+    border: 1px solid;
+    position: relative;
+    margin-right: 350px;
+    margin-left: 350px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 5px;
+}
+.vikas:hover
+{
+    background: linear-gradient(#9C0F48,#ECB390);
+}
+
+
+/*------REVIEWS----*/
+
+#testimonial
+{
+    width: 100%;
+    padding: 70px 0;
+}
+.title-text p
+{
+    color: #FDEFF4;
+}
+.testimonial-row
+{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap:wrap;
+}
+.testimonial-col
+{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom:30px;
+    border-radius: 5px;
+    box-shadow:0px 10px 20px 3px #00968814;
+    cursor: pointer;
+    transition:transform 0.5s;
+    background-color: white;
+}
+.testimonial-col p
+{
+    font-size: 14px;
+}
+.user
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.user img
+{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.user-info .fa-brands fa-twitter
+{
+    margin-left:10px;
+    color: #27c0ff;
+    font-size: 20px;
+}
+.user-info small
+{
+    color: blue;
+}
+.testimonial-col:hover
+{
+    transform: translateY(-7px);
+}
+@media screen and (max-width:770px)
+{
+    .testimonial-col
+    {
+        flex-basis: 100%;
+    }
+}
