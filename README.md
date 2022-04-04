@@ -15,3 +15,4 @@ KNOWN ISSUES:
 * The page is not completely responsive.
 * The page needs a better UI.
 
+You can contact me at aakarshvatsraj0509@gmail.com...
