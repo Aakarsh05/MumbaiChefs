@@ -1,16 +1,16 @@
-# CHEFS IN MUMBAI
+CHEFS IN MUMBAI
 
 Contributed by Aakarsh Vatsraj
 
-# ABOUT THE PROJECT
+ ABOUT THE PROJECT
 
 The project is basic static website which contains the top chef's of Mumbai.
 
-# TECHNOLOGIES USED
+TECHNOLOGIES USED
 
 The technologies used in this project are HTML and CSS.
 
-# KNOWN ISSUES
+KNOWN ISSUES
 
 * The page is not completely responsive.
 * The page needs a better UI.
