@@ -4,31 +4,36 @@
 }
 body
 {
-background-image:url("gallery/mumbai1.jpg");
+background-image:url("https://images.creativemarket.com/0.1.0/ps/7353024/1820/965/m1/fpnw/wm1/ahp0l9ecx0vfwsdo1rwxcdtynfyzn4gweomwnblntp5glupfrmnapoab88tzxyjd-.jpg?1574572829&s=b8ffc3e573cf00451539ee4b954ba3c0");
 background-size: cover;
 background-attachment: fixed;
 }
 #feature
 {
+     
     width:100%;
     padding: 70px 0;
 }
-.title-text
-{
-    text-align: center;
-    padding-bottom: 70px;
+.banner{
+    
+    height: 100vh;
+    background-image: url("gallery/Home.jpg");
+    background-size: cover;
+    overflow: hidden;
+    background-color: #000000;
+    background-position: center top;
+    background-attachment: scroll;
 }
+
+a{
+    text-decoration: none;
+    color: #9C0F48;
+    font-family: 'Delius', handwriting;
+}
+
 .title-text p
 {
-    margin:auto;
-    font-size:50px;
-    color:black;
-    font-weight:bold;
-    position: relative;
-    z-index: 1;
-    display:inline-block;
-    text-decoration: underline;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
 }
 .title-text p::after
 {
@@ -49,7 +54,39 @@ background-attachment: fixed;
     font-size: 50px;
     text-decoration: underline;
 }
-
+.brown-clr{
+    color:#69564b;
+    font-family: 'Delius', handwriting;
+}
+.red-clr{
+    color: #d34d34;
+font-family: 'Kaushan Script', cursive;
+}
+@media (min-width:480px) {
+    .brown-clr{
+        font-size: 4rem;
+    }
+    .red-clr{
+        font-size: 3rem;
+    }
+    
+}
+.black-bg{
+background-color: #000000;
+text-align: center;
+color: #04d9ff;
+border-color: #04d9ff;
+border-radius: 9px;
+border-width: 3px;
+}
+.tile{
+    background-size: 100% 100%;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+ }
 .service-box1
 {
     width: 80%;
@@ -129,6 +166,7 @@ hr
 {
     text-decoration: none;
     text-align: center;
+    
 }
 
 
@@ -145,12 +183,14 @@ h3
     border-radius: 10px;
     padding: 5px 5px;
     margin-bottom: 20px;
-
+    
+    border-color: #04d9ff;
+    border-width: 3px;
 }
 
 .Chef-selection:hover
 {
-    background: linear-gradient(#9C0F48,#ECB390);
+    background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
 
@@ -161,6 +201,7 @@ h3
 
 @media (max-width: 965px) {
     .Chef-selection {
+        background-color: #000000;
         border: 1px solid black;
         border-radius: 10px;
         display: inline-block;
@@ -174,12 +215,20 @@ h3
     .buttons {
         align-items: center;
     }
-
-    .Chef-selection:hover {
+.title-text p{
+background-color: #000000;
+}
+    /* .Chef-selection:hover {
         background: linear-gradient(#9C0F48,#ECB390);
-    }
+    } */
 
     
+}
+@media  (min-width: 480px) and (max-width: 965px) { 
+   .tile{
+       height: 300px;
+   } 
+  
 }
 
 
