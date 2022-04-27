@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
 *{
     margin:0;
     padding:0;
 }
 body
 {
-background-image:url("gallery/mumbai1.jpg");
+background-image:linear-gradient(
+    rgba(0, 0, 0, 0.2), 
+    rgba(0, 0, 0, 0.5)
+  ),url("gallery/mumbai1.jpg");
 background-size: cover;
 background-attachment: fixed;
+font-family: 'Tapestry', cursive;
 }
+
+
 #feature
 {
     width:100%;
@@ -21,21 +29,21 @@ background-attachment: fixed;
 .title-text p
 {
     margin:auto;
-    font-size:50px;
+    font-size:30px;
     color:black;
     font-weight:bold;
     position: relative;
     z-index: 1;
     display:inline-block;
     text-decoration: underline;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
 }
 .title-text p::after
 {
     content:'';
     width:50px ;
     height: 35px;
-    background: linear-gradient(#009658,#fff);
+    background: linear-gradient(white,black);
     position: absolute;
     top:-20px;
     left:0;
@@ -52,27 +60,30 @@ background-attachment: fixed;
 
 .service-box1
 {
-    width: 80%;
+    width: 100%;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap:row;
     justify-content: space-around;
     margin:auto;
     background: transparent;
+    
 }
 .single-service1
 {
-    flex-basis: 48%;
+   
     text-align: center;
     border-radius: 7px;
     margin-bottom: 20px;
     color: #fff;
     position: relative;
+    
+   
 }
 .single-service1 img
 {
-    width:100%;
+    width:300px;
     border-radius:7px;
-    height: 100%;
+    height: 350px;
     border-radius: 5px;
     box-shadow:0px 10px 20px 3px #00968814;
 }
@@ -84,7 +95,7 @@ background-attachment: fixed;
     top:0;
     border-radius: 7px;
     cursor:pointer;
-    background: linear-gradient(rgba(0,0,0,0.5),aqua);
+    background: linear-gradient(rgba(0,0,0,0.2),black);
     opacity: 0;
     transition: 1s;
 }
@@ -147,7 +158,7 @@ h3
 }
 .bali:hover
 {
-    background: linear-gradient(#9C0F48,#ECB390);
+    background: linear-gradient(#4d4a4b,#1f1e1d);
 }
 .gupta
 {
@@ -163,7 +174,7 @@ h3
 }
 .gupta:hover
 {
-    background: linear-gradient(#9C0F48,#ECB390);
+    background: linear-gradient(#4d4a4b,#1f1e1d);
 }
 .anil
 {
@@ -179,7 +190,7 @@ h3
 }
 .anil:hover
 {
-    background: linear-gradient(#9C0F48,#ECB390);
+    background: linear-gradient(#4d4a4b,#1f1e1d);
 }
 .vikas
 {
@@ -195,7 +206,7 @@ h3
 }
 .vikas:hover
 {
-    background: linear-gradient(#9C0F48,#ECB390);
+    background: linear-gradient(#4d4a4b,#1f1e1d);
 }
 
 
@@ -208,7 +219,7 @@ h3
 }
 .title-text p
 {
-    color: #FDEFF4;
+    color: #ffffff;
 }
 .testimonial-row
 {
@@ -228,6 +239,9 @@ h3
     box-shadow:0px 10px 20px 3px #00968814;
     cursor: pointer;
     transition:transform 0.5s;
+    background-color: rgb(189, 187, 187);
+}
+.testimonial-col:hover {
     background-color: white;
 }
 .testimonial-col p
@@ -243,8 +257,9 @@ h3
 .user img
 {
     width: 40px;
+    height:40px;
     margin-right: 20px;
-    border-radius: 3px;
+    border-radius: 50%;
 }
 .user-info .fa-brands fa-twitter
 {
@@ -267,3 +282,10 @@ h3
         flex-basis: 100%;
     }
 }
+
+.buttons{
+    background: rgba(148, 148, 148, 0.8);
+    backdrop-filter: saturate(1000%) blur(5px);
+    padding:10px;
+  }
+  
